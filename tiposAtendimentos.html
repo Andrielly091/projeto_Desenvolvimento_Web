@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Tipo de Atendimento</title>
+    <link href="Css/tiposAtendimento.css" rel="stylesheet"/>
+    
+</head>
+<body>
+
+    <img id="iconeSair" src="Imagens/iconeSair.png"/>
+
+    <img id="iconeVoltar" src="Imagens/iconeVoltar.png"/>
+    
+    <form >
+        <img class="imagemAPAE" src="Imagens/LogoAPAE.webp"/>
+        <h2>TIPOS DE ATENDIMENTOS</h2>
+
+        <div style="margin-left: 10%;">
+
+        <p class="opcao">Fisioterapia</p>
+        <input type="radio" name="Fisioterapia" value="Sim" style="margin-left: 13%;">Sim
+        <input type="radio" name="Fisioterapia" value="Não">Não
+
+        <p class="opcao">Pintura</p>
+        <input type="radio" name="Pintura" value="Sim"  style="margin-left: 13%;">Sim
+        <input type="radio" name="Pintura" value="Não">Não
+
+        <p class="opcao">Musicoterapia</p>
+        <input type="radio" name="Musicoterapia" value="Sim" style="margin-left: 13%;">Sim
+        <input type="radio" name="Musicoterapia" value="Não">Não
+
+    </div>
+
+    <div style="margin-left: 64%; margin-top:-32%;">
+
+        <p class="opcao3" >Psicologia</p>
+        <input type="radio" name="Psicologia" value="Sim" style="margin-top: 1%;">Sim
+        <input type="radio" name="Psicologia" value="Não">Não
+
+        <p class="opcao3" >Psicopedagoga</p>
+        <input type="radio" name="Psicopedagoga" value="Sim"  style="margin-top: 1%;">Sim
+        <input type="radio" name="Psicopedagoga" value="Não">Não
+
+        <p class="opcao3" >Educação física</p>
+        <input type="radio" name="Educação física" value="Sim"  style="margin-top: 1%;">Sim
+        <input type="radio" name="Educação física" value="Não">Não
+
+    </div>
+        
+        <br><br><br><br><br>
+        
+        <button type="button" id="proximo" onclick="proximaPagina()" onclick="adicionar()"><a href="ListaPacientes.html" style="color: white; text-decoration: none;">FINALIZAR</a></button>
+        <br/><br/>
+
+    </form>
+
+
+    <p id="OpcaoFuncionario"><a href="listarFuncionarios.html">Funcionários</a></p>
+    <p id="OpcaoPaciente"><a href="ListaPacientes.html">Pacientes</a></p>
+    <p id="OpcaoHome"><a href="index.html">Home</a></p>
+
+    <script src="JavaScript/tipoAtendimento.js"></script>
+    
+</body>
+</html>

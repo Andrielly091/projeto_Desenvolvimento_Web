@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Matricula</title>
+    <link href="Css/Matricula.css" rel="stylesheet"/>
+    
+</head>
+<body>
+
+    <img id="iconeSair" src="Imagens/iconeSair.png"/>
+
+    <img id="iconeVoltar" src="Imagens/iconeVoltar.png"/>
+    
+    <form >
+
+        <label id="imageContainer" for="iconeInput"><img id="iconePessoa" src="Imagens/pessoa.webp"></label>
+        <input style="visibility: hidden;" id="iconeInput" type="file" accept="image/*">
+        <img class="imagemAPAE" src="Imagens/LogoAPAE.webp"/>
+        <h2>FICHA DE RENOVAÇÃO <br> DE MATRÍCULA</h2>
+        <p class="usuario">Nome do usuário</p>
+        <input id="Usuario" type="text">
+        <p class="cid">CID</p>
+        <input id="CID" type="text">
+        <p class="usuario">Data de Nascimento</p>
+        <input id="Date" type="date">
+        <p class="cid">Nome do responsável</p>
+        <input id="Responsavel" type="text">
+
+        <p class="opcao">Vinculo:
+            <input id="opcao1" type="radio" name="vinculo" value="Mãe">Mãe
+            <input id="pai" type="radio" name="vinculo" value="Pai"> Pai</p>
+            
+            <p class="opcao2">
+                <input id="opcao11" type="radio" name="vinculo" value="Irmã(o)">Irmã(o)
+                <input type="radio" name="vinculo" value="Tio(a)"> Tia(o)</p>
+                <p class="opcao3">
+                    <input id="opcao111" type="radio" name="vinculo" value="Outros">Outros
+                    </p>
+                    <p class="telefone">Telefone</p>
+                    <input id="Telefone" type="tel">
+        
+        <button type="button" id="proximaPagina" onclick="adicionar()" onclick="adicionarDados()">PRÓXIMO</button>
+        <br/><br/>
+       
+    </form>
+
+    <p id="OpcaoFuncionario"><a href="listarFuncionarios.html">Funcionários</a></p>
+    <p id="OpcaoPaciente"><a href="ListaPacientes.html">Pacientes</a></p>
+    <p id="OpcaoHome"><a href="index.html">Home</a></p>
+
+
+    <script src="JavaScript/matricula.js"></script>
+    
+</body>
+</html>
